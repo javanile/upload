@@ -1,0 +1,11 @@
+version...
+
+services:
+  upload:
+    build: .
+    environment:
+      - UPLOAD_SECRET=mysecret
+    ports:
+      - 8080:80
+    volumes:
+      - ./files:/files
