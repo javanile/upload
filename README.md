@@ -27,6 +27,9 @@ In addtion to those you who wish to can also set the following variables:
 
 - Simple PHP script for uplaod files
 - Upload Large files (at least 1GB)
+- Place all uploaded files into '/files' directory
+- If file already exists move the old file into backup directory than add postfix with date (eg. large_file_20200212201222.zip (Year-Month-Day-Hour-Minutes-Second))
+- Last uploaded file must keep the original name
 
 ## exmaple of a docker-compose.yml set up
 This set up shows the file uploader service with all variables set and the upload service connected to the delta-service
