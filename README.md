@@ -48,3 +48,12 @@ curl -H "Authorization: Bearer secret1234" -F "@large_file.zip" http://localhost
 ```bash
 bash test.sh
 ```
+
+## How to contribute
+
+Get detailed information on thie file [CONTRIBUTE.md](CONTRIBUTE.md)
+
+## License
+
+Creative Commons Attribution 3.0 Unported [LICENSE](LICENSE)
+
