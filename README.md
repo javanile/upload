@@ -23,6 +23,11 @@ This micro-service is used to store file on server.
 In addtion to those you who wish to can also set the following variables:
 * UPLOAD_SECRET: The value of the key required to post file
 
+## Features
+
+- Simple PHP script for uplaod files
+- Upload Large files (at least 1GB)
+
 ## exmaple of a docker-compose.yml set up
 This set up shows the file uploader service with all variables set and the upload service connected to the delta-service
 ```
@@ -35,7 +40,6 @@ This set up shows the file uploader service with all variables set and the uploa
     volumes:
       - ./uploads:/files
 ```
-
 
 ## example of usage
 This is how the service could be used with a curl call if it is put in a docker-compose.yml file as uploader:
