@@ -6,7 +6,7 @@ docker-compose up -d
 dd if=/dev/zero of=large_file.zip bs=1G count=1
 
 ## Run upload using curl
-curl -H "Auth..." -F @large_file.zip http://localhost:8080
+curl -H "Authorization: Bearer mysecret" -F @large_file.zip http://localhost:8080
 
 ## Test if file exists
 if [[ -f "files/large_file.zip" ]]; then
@@ -14,4 +14,3 @@ if [[ -f "files/large_file.zip" ]]; then
 else
   echo "Fail."
 fi
-
