@@ -4,7 +4,7 @@ services:
   upload:
     build: .
     environment:
-      - UPLOAD_SECRET=mysecret
+      - UPLOAD_SECRET=secret
     ports:
       - 8080:80
     volumes:
